@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZPxuxxpRWdzZiZwe27XS0+qra3w5MBNv8qN1kC5XDvy3Iq0aJr21RFg34II9JUgY/1fmCUrRKKn096ihFAPZw==",
+  "dgSpecHash": "FToy8Ehd2+qm3nruK378I9kurnB2iTHqC00s29pGRuy5ER1+SL8JUrPVK60391FocKZ3+k+QECoQYV6lMASISg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Doosy\\Source\\Repos\\rinae963\\Hotel-Listing-API\\HotelListing.API\\HotelListing.API.csproj",
+  "projectFilePath": "C:\\Users\\Doosy\\source\\repos\\rinae963\\Hotel-Listing-API\\HotelListing.API\\HotelListing.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Doosy\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Doosy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
