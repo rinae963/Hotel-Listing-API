@@ -53,7 +53,7 @@ namespace HotelListing.API.Data
 
                 new Hotel
                 {
-                    Id =2,
+                    Id = 2,
                     Name = "Comfort Suites",
                     Address = "George Town",
                     CountryId = 3,
