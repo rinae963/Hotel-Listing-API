@@ -88,22 +88,6 @@ namespace HotelListing.API.Controllers
 
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPost("createCountry")]
-        //public async Task<ActionResult<Country>> PostCountry([FromBody]Country country)
-        //{
-        //  if (_context.Countries == null)
-        //  {
-        //      return Problem("Entity set 'HotelListingDbContext.Countries'  is null.");
-        //  }
-        //    //The operation will be to go to the Countries Table and add a new Country and save changes
-        //    _context.Countries.Add(country);
-        //    await _context.SaveChangesAsync();
-
-        //    return CreatedAtAction("GetCountry", new { id = country.Id }, country);
-        //}
-
-        // POST: api/Countries
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost()]
         public async Task<ActionResult<Country>> Create(Country country)
         {
