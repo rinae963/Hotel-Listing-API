@@ -1,0 +1,218 @@
+2022-08-18 10:52:00.813 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 10:52:00.863 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 10:52:00.870 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:52:00.871 +02:00 [INF] Hosting environment: Development
+2022-08-18 10:52:00.872 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 10:52:10.196 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<HotelListing.API.Data.Country>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at HotelListing.API.Repository.GenericRepository`1.GetAllAsync() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 0
+   at HotelListing.API.Controllers.CountriesController.GetCountries() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 40
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 10:52:33.570 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 10:52:33.624 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 10:52:33.629 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 10:52:33.629 +02:00 [INF] Hosting environment: Development
+2022-08-18 10:52:33.630 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 10:52:42.673 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Task`1 -> CountryDto
+System.Threading.Tasks.Task`1[[HotelListing.API.Data.Country, HotelListing.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.API.Models.Country.CountryDto
+   at lambda_method32(Closure , Object , CountryDto , ResolutionContext )
+   at HotelListing.API.Controllers.CountriesController.GetCountry(Int32 id) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 62
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 11:08:59.040 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 11:08:59.095 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 11:08:59.100 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:08:59.101 +02:00 [INF] Hosting environment: Development
+2022-08-18 11:08:59.101 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 11:19:23.714 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 11:19:23.801 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 11:19:23.809 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:19:23.815 +02:00 [INF] Hosting environment: Development
+2022-08-18 11:19:23.817 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 11:19:35.292 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<HotelListing.API.Data.Country>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at HotelListing.API.Repository.GenericRepository`1.GetAllAsync() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 0
+   at HotelListing.API.Controllers.CountriesController.GetCountries() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 40
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 11:20:05.701 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Task`1 -> CountryDto
+System.Threading.Tasks.Task`1[[HotelListing.API.Data.Country, HotelListing.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.API.Models.Country.CountryDto
+   at lambda_method40(Closure , Object , CountryDto , ResolutionContext )
+   at HotelListing.API.Controllers.CountriesController.GetCountry(Int32 id) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 62
+   at lambda_method35(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 11:22:37.959 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 11:22:38.027 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 11:22:38.039 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 11:22:38.041 +02:00 [INF] Hosting environment: Development
+2022-08-18 11:22:38.042 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 11:22:49.371 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<HotelListing.API.Data.Country>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at HotelListing.API.Repository.GenericRepository`1.GetAllAsync() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 0
+   at HotelListing.API.Controllers.CountriesController.GetCountries() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 32
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 11:23:35.318 +02:00 [INF] Hotel Adding
+2022-08-18 13:20:41.359 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 13:20:41.573 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 13:20:41.601 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 13:20:41.604 +02:00 [INF] Hosting environment: Development
+2022-08-18 13:20:41.609 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 13:20:54.605 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<HotelListing.API.Data.Country>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at HotelListing.API.Repository.GenericRepository`1.GetAllAsync() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 0
+   at HotelListing.API.Controllers.CountriesController.GetCountries() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 40
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 21:19:00.165 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-18 21:19:00.217 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-18 21:19:00.222 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-18 21:19:00.223 +02:00 [INF] Hosting environment: Development
+2022-08-18 21:19:00.223 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-18 21:19:25.432 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<HotelListing.API.Data.Country>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at HotelListing.API.Repository.GenericRepository`1.GetAllAsync() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 0
+   at HotelListing.API.Controllers.CountriesController.GetCountries() in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 40
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-18 21:19:56.393 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Task`1 -> CountryDto
+System.Threading.Tasks.Task`1[[HotelListing.API.Data.Country, HotelListing.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.API.Models.Country.CountryDto
+   at lambda_method40(Closure , Object , CountryDto , ResolutionContext )
+   at HotelListing.API.Controllers.CountriesController.GetCountry(Int32 id) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 62
+   at lambda_method35(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

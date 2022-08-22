@@ -8,6 +8,9 @@
         public string Name { get; set; }
         public string ShortName { get; set; }
 
-        //public virtual IList<Hotel> Hotel { get; set; }
+        //public int HotelId { get; set; }
+        //public Hotel Hotels { get; set; }
+
+        public virtual IList<Hotel> Hotels { get; set; }
     }
 }

@@ -1,6 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using HotelListing.API.Data;
+using HotelListing.API.Configurations;
+using HotelListing.API.Repository;
+using HotelListing.API.Contracts;
+using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +30,13 @@ builder.Services.AddCors(options =>
 //Adding a configuration so that serilog will be up and running when the app starts to run.
 //ctx-context   lc-logging context
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
+
+//Injection of AutoMApper so that it can be used anywhere
+builder.Services.AddAutoMapper(typeof(MapperConfig));
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
+
+
 
 var app = builder.Build();
 
