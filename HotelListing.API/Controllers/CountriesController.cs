@@ -23,7 +23,7 @@ namespace HotelListing.API.Controllers
         public CountriesController(IMapper mapper, ICountriesRepository countriesRepository)
         {
 
-            //   this.logger = logger;
+            //this.logger = logger;
             this._mapper = mapper;
             this._countriesRepository = countriesRepository;
         }
@@ -50,11 +50,6 @@ namespace HotelListing.API.Controllers
             //This is basically more like an inner join
             var country = await _countriesRepository.GetDetails(id);
 
-
-            //  if (_countriesRepository == null)
-            //{
-            //    return NotFound();
-            //}
             if (country == null)
             {
                 return NotFound();

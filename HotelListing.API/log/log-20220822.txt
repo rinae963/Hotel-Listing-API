@@ -3,3 +3,13 @@
 2022-08-22 09:46:52.948 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-08-22 09:46:52.949 +02:00 [INF] Hosting environment: Development
 2022-08-22 09:46:52.949 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-22 14:33:46.599 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-22 14:33:46.645 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-22 14:33:46.651 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 14:33:46.652 +02:00 [INF] Hosting environment: Development
+2022-08-22 14:33:46.652 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-22 14:33:57.736 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-22 14:33:57.854 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-22 14:33:57.874 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 14:33:57.879 +02:00 [INF] Hosting environment: Development
+2022-08-22 14:33:57.883 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\

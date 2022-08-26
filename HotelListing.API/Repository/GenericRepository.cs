@@ -2,6 +2,7 @@
 using HotelListing.API.Data;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace HotelListing.API.Repository
 {
     // :Inherits from
@@ -59,11 +60,6 @@ namespace HotelListing.API.Repository
             //update the context then save the changes
             _context.Update(entity);
             await _context.SaveChangesAsync();
-        }
-
-        Task IGenericRepository<T>.AddAsync(T entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

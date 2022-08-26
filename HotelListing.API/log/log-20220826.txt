@@ -1,0 +1,85 @@
+2022-08-26 09:01:50.912 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-26 09:01:50.987 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-26 09:01:50.999 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 09:01:51.000 +02:00 [INF] Hosting environment: Development
+2022-08-26 09:01:51.001 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-26 09:26:03.161 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at HotelListing.API.Repository.GenericRepository`1.HotelListing.API.Contracts.IGenericRepository<T>.AddAsync(T entity) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 66
+   at HotelListing.API.Controllers.HotelsController.PostHotel(CreateHotelDto hotelDto) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\HotelsController.cs:line 96
+   at lambda_method115(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 10:13:39.536 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at HotelListing.API.Repository.GenericRepository`1.HotelListing.API.Contracts.IGenericRepository<T>.AddAsync(T entity) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 66
+   at HotelListing.API.Controllers.CountriesController.PostCountry(CreateCountryDto createCountryDto) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 111
+   at lambda_method124(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 11:00:21.555 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-26 11:00:21.606 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-26 11:00:21.611 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 11:00:21.612 +02:00 [INF] Hosting environment: Development
+2022-08-26 11:00:21.612 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-26 11:05:32.809 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at HotelListing.API.Repository.GenericRepository`1.HotelListing.API.Contracts.IGenericRepository<T>.AddAsync(T entity) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Repository\GenericRepository.cs:line 66
+   at HotelListing.API.Controllers.CountriesController.PostCountry(CreateCountryDto createCountryDto) in C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\Controllers\CountriesController.cs:line 111
+   at lambda_method64(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 11:45:56.375 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-26 11:45:56.423 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-26 11:45:56.430 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 11:45:56.430 +02:00 [INF] Hosting environment: Development
+2022-08-26 11:45:56.431 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-26 13:01:51.652 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-26 13:01:51.766 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-26 13:01:51.777 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:01:51.778 +02:00 [INF] Hosting environment: Development
+2022-08-26 13:01:51.779 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
+2022-08-26 13:10:14.468 +02:00 [INF] Now listening on: https://localhost:7053
+2022-08-26 13:10:14.573 +02:00 [INF] Now listening on: http://localhost:5053
+2022-08-26 13:10:14.584 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:10:14.585 +02:00 [INF] Hosting environment: Development
+2022-08-26 13:10:14.586 +02:00 [INF] Content root path: C:\Users\Doosy\source\repos\rinae963\Hotel-Listing-API\HotelListing.API\
